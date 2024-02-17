@@ -1,23 +1,23 @@
 pipeline{
         agent any
         stages{
-            stage ('git'){
+            stage ("git"){
                 steps{
-                    echo 'git'
-                    sh 'git init'
-                    sh 'git pull https://github.com/BharathSukka/fifth.git"
-                    sh 'ls'
+                    echo "git"
+                    sh "git init"
+                    sh "git pull https://github.com/BharathSukka/fifth.git"
+                    sh "ls"
                     }
                     }
-                    stage ('Build'){
+                    stage ("Build"){
                     steps{
-                    echo 'lets build a code'
-                    sh 'python3 jungle.py'
+                    echo "lets build a code"
+                    sh "python3 jungle.py"
                     }
                     }
-                    stage ('test'){
+                    stage ("test"){
                     steps{
-                    echo 'lets test the code'
+                    echo "lets test the code"
                     }
                     }
                     }
