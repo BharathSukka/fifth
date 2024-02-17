@@ -3,8 +3,8 @@ pipeline {
         stages {
             stage ("git") {
                 steps {
-                    echo "git id =111"
-                 
+                    echo "git is cloning"
+                    echo "this is step1"
                     sh "git pull https://github.com/BharathSukka/fifth.git"
                     sh "ls"
                     }
