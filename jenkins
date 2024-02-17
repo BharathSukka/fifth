@@ -4,6 +4,7 @@ pipeline{
             stage ('git'){
                 steps{
                     echo 'git'
+                    sh 'git init'
                     sh 'git pull https://github.com/BharathSukka/fifth.git"
                     sh 'ls'
                     }
