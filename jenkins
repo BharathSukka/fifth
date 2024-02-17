@@ -1,22 +1,22 @@
-pipeline{
+pipeline {
         agent any
-        stages{
-            stage ("git"){
-                steps{
-                    echo "git"
+        stages {
+            stage ("git") {
+                steps {
+                    echo "git id =111"
                     sh "git init"
                     sh "git pull https://github.com/BharathSukka/fifth.git"
                     sh "ls"
                     }
                     }
-                    stage ("Build"){
-                    steps{
+                    stage ("Build") {
+                    steps {
                     echo "lets build a code"
                     sh "python3 jungle.py"
                     }
                     }
-                    stage ("test"){
-                    steps{
+                    stage ("test") {
+                    steps {
                     echo "lets test the code"
                     }
                     }
